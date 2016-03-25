@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		7CA5DEFE1CA38D6800166659 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA5DEFD1CA38D6800166659 /* main.m */; };
 		7CA5DF011CA38D6800166659 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA5DF001CA38D6800166659 /* AppDelegate.m */; };
-		7CA5DF041CA38D6800166659 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA5DF031CA38D6800166659 /* ViewController.m */; };
 		7CA5DF091CA38D6800166659 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CA5DF081CA38D6800166659 /* Assets.xcassets */; };
 		7CA5DF1D1CA38E5C00166659 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA5DF1C1CA38E5C00166659 /* UIView+Frame.m */; };
 		7CA5DF321CA38E6900166659 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CA5DF1E1CA38E6900166659 /* 1.png */; };
@@ -35,6 +34,7 @@
 		7CA5DF481CA38EA200166659 /* ImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA5DF471CA38EA200166659 /* ImageViewCell.m */; };
 		7CB5A99B1CA4D8DF00EFE208 /* LineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB5A99A1CA4D8DF00EFE208 /* LineLayout.m */; };
 		7CD6CD1C1CA50FB100F8236A /* CircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD6CD1B1CA50FB100F8236A /* CircleLayout.m */; };
+		7CF440801CA544B5000901F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF4407F1CA544B5000901F2 /* ViewController.m */; };
 		B5D986B71CC7A1DB12E9D682 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0606F8BAB66A8C4CABAD208 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -44,8 +44,6 @@
 		7CA5DEFD1CA38D6800166659 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7CA5DEFF1CA38D6800166659 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7CA5DF001CA38D6800166659 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7CA5DF021CA38D6800166659 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../../ViewController.h; sourceTree = "<group>"; };
-		7CA5DF031CA38D6800166659 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../../ViewController.m; sourceTree = "<group>"; };
 		7CA5DF081CA38D6800166659 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		7CA5DF0D1CA38D6800166659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		7CA5DF1B1CA38E5C00166659 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
@@ -76,6 +74,8 @@
 		7CB5A99A1CA4D8DF00EFE208 /* LineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineLayout.m; sourceTree = "<group>"; };
 		7CD6CD1A1CA50FB100F8236A /* CircleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleLayout.h; sourceTree = "<group>"; };
 		7CD6CD1B1CA50FB100F8236A /* CircleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleLayout.m; sourceTree = "<group>"; };
+		7CF4407E1CA544B5000901F2 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7CF4407F1CA544B5000901F2 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D21E4892406C7918010DD95F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E0606F8BAB66A8C4CABAD208 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -150,21 +150,12 @@
 		7CA5DF131CA38E1600166659 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7CF4407D1CA544B5000901F2 /* Controllers */,
 				7CA5DF161CA38E1600166659 /* Others */,
-				7CA5DF141CA38E1600166659 /* Controller */,
 				7CA5DF151CA38E1600166659 /* Model */,
 				7CA5DF191CA38E1600166659 /* View */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		7CA5DF141CA38E1600166659 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				7CA5DF021CA38D6800166659 /* ViewController.h */,
-				7CA5DF031CA38D6800166659 /* ViewController.m */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		7CA5DF151CA38E1600166659 /* Model */ = {
@@ -240,6 +231,15 @@
 				7CA5DEFC1CA38D6800166659 /* Supporting Files */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		7CF4407D1CA544B5000901F2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7CF4407E1CA544B5000901F2 /* ViewController.h */,
+				7CF4407F1CA544B5000901F2 /* ViewController.m */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,9 +381,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CF440801CA544B5000901F2 /* ViewController.m in Sources */,
 				7CD6CD1C1CA50FB100F8236A /* CircleLayout.m in Sources */,
 				7CA5DF1D1CA38E5C00166659 /* UIView+Frame.m in Sources */,
-				7CA5DF041CA38D6800166659 /* ViewController.m in Sources */,
 				7CA5DF481CA38EA200166659 /* ImageViewCell.m in Sources */,
 				7CB5A99B1CA4D8DF00EFE208 /* LineLayout.m in Sources */,
 				7CA5DF011CA38D6800166659 /* AppDelegate.m in Sources */,
